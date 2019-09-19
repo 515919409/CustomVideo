@@ -1,0 +1,184 @@
+.mouseEnter:hover {
+  transform: translateY(-5%);
+  transition: all 0.5s;
+}
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap {
+  *zoom: 1;
+  position: relative;
+  display: inline-block;
+  background-color: #000000;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  /* #video::-webkit-media-controls{
+    display: none;
+  }::-moz-media-controls{
+     display: none;
+   }*/
+}
+#wrap:after {
+  content: '\200B';
+  height: 0;
+  display: block;
+  clear: both;
+}
+#wrap #video {
+  width: 800px;
+  height: 400px;
+}
+#wrap #control {
+  *zoom: 1;
+  width: 800px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#wrap #control:after {
+  content: '\200B';
+  height: 0;
+  display: block;
+  clear: both;
+}
+#wrap #control #progress {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #6e6e6e;
+}
+#wrap #control #progress #inner {
+  height: 100%;
+  width: 0px;
+  background-color: #2ba5eb;
+  position: relative;
+}
+#wrap #control #progress #inner #drag {
+  width: 8px;
+  height: 8px;
+  background-color: #fcff93;
+  position: absolute;
+  left: 100%;
+}
+#wrap #control #progress:hover #inner #drag {
+  display: block;
+}
+#wrap #control #playOrPause {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: 1px solid transparent;
+  background: url("../img/play.png") center center no-repeat;
+  background-size: cover;
+  float: left;
+}
+#wrap #control #time {
+  float: left;
+  margin-left: 20px;
+}
+#wrap #control #time span {
+  display: inline-block;
+  color: #FFFFFF;
+  height: 40px;
+  line-height: 40px;
+}
+#wrap #control #fullScreen,
+#wrap #control #sound {
+  width: 32px;
+  height: 40px;
+  border: 1px solid transparent;
+  outline: none;
+  background-size: cover;
+  float: right;
+  margin: 0 10px;
+}
+#wrap #control #fullScreen {
+  background: url("../img/fullscreen.png") center bottom no-repeat;
+}
+#wrap #control #sound {
+  background: url("../img/sound.png") center bottom no-repeat;
+  position: relative;
+  text-align: center;
+}
+#wrap #control #sound:hover #volume {
+  display: block;
+}
+#wrap #control #sound #volume {
+  height: 100px;
+  width: 15px;
+  background-color: #baddeb;
+  margin: 0 20px;
+  position: absolute;
+  left: -11px;
+  top: -90px;
+  display: none;
+  transition: all 1s;
+  border-radius: 8px;
+}
+#wrap #control #sound #volume:after {
+  content: "100";
+  color: #bd362f;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
+#wrap #control #sound #volume #cir {
+  width: 15px;
+  height: 10px;
+  background-color: #eb7517;
+  border-radius: 8px;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+#wrap #control #rate {
+  width: 32px;
+  height: 32px;
+  float: right;
+  position: relative;
+  margin: 0 10px;
+}
+#wrap #control #rate span {
+  width: 34px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/settings.png") center bottom no-repeat;
+}
+#wrap #control #rate #rate_check {
+  position: absolute;
+  left: -120px;
+  top: -16px;
+  width: 155px;
+  border-radius: 8px;
+  visibility: hidden;
+}
+#wrap #control #rate #rate_check button {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  outline: none;
+  border-width: 0px;
+  width: 35px;
+}
+#wrap #control #rate #rate_check button.button_show {
+  color: #FFFFFF;
+  background-color: #2ba5eb;
+}
+#wrap #control #playlist {
+  width: 32px;
+  height: 32px;
+  float: right;
+  margin: 0 10px;
+}
+#wrap #control #playlist span {
+  width: 34px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/folder.png") center bottom no-repeat;
+}
+#wrap #control #playlist #video_file {
+  display: none;
+}
+/*# sourceMappingURL=index_css.css.map */

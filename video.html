@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义视频播放器</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index_css.css">
+    <link rel="icon" href="./img/video.ico">
+</head>
+<body>
+
+<div id="wrap">
+    <video id="video" src="./img/nez.mp4" controls  preload="metadata"  poster="" autoplay>
+<!--        <source src="./img/nez.mp4">-->
+    </video>
+
+    <div id="control">
+        <div id="progress">
+            <div id="inner">
+                <div id="drag"></div>
+            </div>
+
+        </div>
+
+        <button id="playOrPause" class="mouseEnter"></button>
+        <div id="time">
+            <span>00:00:00</span>
+            <span></span>
+        </div>
+
+        <button id="fullScreen" class="mouseEnter"></button>
+
+        <div id="sound" class="mouseEnter">
+            <div id="volume">
+                <div id="cir"></div>
+            </div>
+        </div>
+
+        <div id="rate" class="mouseEnter">
+            <span ></span>
+            <div id="rate_check">
+                <button class="mouseEnter">0.5x</button>
+                <button class="mouseEnter button_show">1x</button>
+                <button class="mouseEnter">1.5x</button>
+                <button class="mouseEnter">2.0x</button>
+            </div>
+        </div>
+
+        <div id="playlist" class="mouseEnter" title="打开视频文件">
+            <span id="rw_file"></span>
+            <input type="file" id="video_file"  onchange="imports();">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./js/index_js.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>
